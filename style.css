@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 200 1.5rem 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --box-shadow-color: hsla(210, 9%, 82%, 0.7);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10rem 3rem;
+}
+
+@media only screen and (min-width: 50rem) {
+  main {
+    width: 100rem;
+    height: 60rem;
+    position: relative;
+  }
+
+  .title {
+    width: 50rem;
+  }
+
+  section {
+    position: absolute;
+  }
+
+  .supervisor-section {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .team-builder-section {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .calculator-section {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .karma-section {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: var(--very-dark-blue);
+}
+
+.title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem 0 1.5rem 0;
+  color: var(--very-dark-blue);
+}
+
+.title p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--grayish-blue);
+  line-height: 2rem;
+}
+
+section {
+  box-shadow: 0.5rem 1rem 1.5rem var(--box-shadow-color),
+    -0.5rem 1rem 2rem var(--box-shadow-color);
+  padding: 3.2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border-top: 0.5rem solid var(--cyan);
+  width: 32rem;
+  height: 27.5rem;
+}
+
+.supervisor-section {
+  border-top: 0.5rem solid var(--cyan);
+}
+
+.team-builder-section {
+  border-color: var(--red);
+}
+
+.karma-section {
+  border-color: var(--orange);
+}
+
+.calculator-section {
+  border-color: var(blue);
+}
+
+.supervisor-section h3,
+.team-builder-section h3,
+.karma-section h3,
+.calculator-section h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.supervisor-section p,
+.team-builder-section p,
+.karma-section p,
+.calculator-section p {
+  color: var(--grayish-blue);
+  line-height: 2rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.supervisor-section img,
+.team-builder-section img,
+.karma-section img,
+.calculator-section img {
+  display: block;
+  position: relative;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -100%);
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
