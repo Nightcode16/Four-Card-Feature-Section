@@ -18,12 +18,13 @@
 }
 
 body {
+  background-color: var(--grayish-blue);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 10rem 3rem;
+  padding: 10vh 3rem;
 }
 
 @media only screen and (min-width: 50rem) {
